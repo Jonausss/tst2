@@ -39,13 +39,13 @@ export const momentsData = [
       title: 'A Segunda Declaração de Amor.',
       date: "24/07/2024",
       description: 'E esse foi o dia que a minha vida nunca mais foi a mesma, pois agora minha vida passou a ser você.',
-      imageUrl: image4
+      imageUrl: image5
    },
    {
       id: 6,
       title: 'O Primeiro "Eu Te Amo"',
       date: "28/07/2024",
       description: 'Lembro que cada eu te amo era um espasmo que eu tinha, um coração quentinho e um sorriso que ninguém podia retirar. Nesse dia eu não consegui dormir.',
-      imageUrl: image5
+      imageUrl: image2
    }, 
 ];
