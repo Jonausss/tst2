@@ -13,7 +13,7 @@ const Login = () => {
       e.preventDefault();
 
       if (username === '0112' && password === '0112') {
-         navigate('/11')
+         navigate('/feed')
       } else {
          setError('Usuário inválido!');
          setPassword('');
