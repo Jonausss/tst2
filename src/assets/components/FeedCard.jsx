@@ -9,17 +9,18 @@ const FeedCard = ({ image, title, description, link, buttonText = "Assistir" }) 
       rounded-[30px] 
       flex flex-col items-center justify-end 
       overflow-hidden 
-      shadow-[0.5rem_0.5rem_16px_0.8rem_var(--color-lilac)]
+      border-0 border-black-purple/10
+      shadow-2xl
     ">
          <img
             src={image}
             alt={title}
-            className="w-[90%] h-[40%] object-cover mt-1 rounded-2xl"
+            className="w-full h-[50%] object-cover"
          />
          <div className="
         bg-white/50 
         w-full h-[50%] 
-        mt-2.5 px-4 
+        px-4 
         flex flex-col 
         text-ellipsis overflow-hidden
       ">

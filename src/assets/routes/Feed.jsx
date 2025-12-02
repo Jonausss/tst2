@@ -1,8 +1,10 @@
 import React from 'react'
-import FeedCard from '../components/FeedCard';
+import FeedCard from '../components/FeedCard'
+
+import ThumbCafeteriaEntrePatas from '../images/thumbs/CafeteriaEntrePatas.png'
 
 const Feed = () => {
-   const navButtonStyle = "bg-lilac text-black-purple text-xl m-4 px-3 py-1 border border-black-purple rounded-2xl hover:bg-light-lilac transition-colors text-center cursor-pointer block text-decoration-none";
+   const navButtonStyle = "bg-lilac text-black-purple text-xl m-4 px-3 py-1 border border-black-purple rounded-2xl hover:bg-light-lilac transition-colors text-center cursor-pointer block text-decoration-none"
 
    return (
       <div id="container" className="min-h-screen w-full bg-linear-to-r from-off-white to-lilac font-sans">
@@ -27,7 +29,13 @@ const Feed = () => {
             <button className={`${navButtonStyle} m-0`}>Indecisão</button>
 
             <div className="flex flex-wrap items-center justify-center p-8 gap-4 mb-20 w-full">
-               nenhum
+               <FeedCard
+                  image={ThumbCafeteriaEntrePatas}
+                  title="Cafeteria Entre Patas"
+                  description="Drinks perfeitos para você tomar durante suas madrugadas"
+                  link="/12"
+                  buttonText="Entrar"
+               />
             </div>
          </section>
 
@@ -36,20 +44,7 @@ const Feed = () => {
             <button className={`${navButtonStyle} m-0`}>Indecisão</button>
 
             <div className="flex flex-wrap items-center justify-center p-8 gap-4 mb-20 w-full">
-               <FeedCard
-                  image="/src/assets/img/thumb/CatLettersThumb.png"
-                  title="Cat's Letters (PC)"
-                  description="Um gato tentando chegar no seu amor panda (+cartas)"
-                  link="../../games/Cat's Letters/pages/stage1.html"
-                  buttonText="Jogar"
-               />
-               <FeedCard
-                  image="/src/assets/img/thumb/ConsolationCatThumb.png"
-                  title="Consolation cat"
-                  description="Escolha como quer que o gatinho te console"
-                  link="../../games/Consolation cat/pages/consolationCat.html"
-                  buttonText="Jogar"
-               />
+               Estou adicionando os jogos ainda --
             </div>
          </section>
 
@@ -60,15 +55,15 @@ const Feed = () => {
             <div className="flex flex-wrap items-center justify-center p-8 gap-4 mb-20 w-full">
                <FeedCard
                   image="/src/assets/img/thumb/LovePosts.png"
-                  title="Love posts 💜"
-                  description="Posts de amor como o Pinterest!"
+                  title="Quando nós..."
+                  description="Veja uma timeline da vida de casados nossa :)"
                   link="/11"
                   buttonText="Entrar"
                />
                <FeedCard
-                  image="/src/assets/img/thumb/CafeteriaEntrePatas.png"
+                  image={ThumbCafeteriaEntrePatas}
                   title="Cafeteria Entre Patas"
-                  description="Ainda em desenvolvimento"
+                  description="Drinks perfeitos para você tomar durante suas madrugadas"
                   link="/12"
                   buttonText="Entrar"
                />
@@ -80,30 +75,35 @@ const Feed = () => {
             <button className={`${navButtonStyle} m-0`}>Indecisão</button>
 
             <div className="flex flex-wrap items-center justify-center p-8 gap-4 mb-20 w-full">
-               <FeedCard
-                  image="/src/assets/img/thumb/💋Beijinho na sua boquinha para sarar o meu amor 😚.webp"
-                  title="💋Beijinho na sua boquinha..."
-                  description=""
-                  link="https://youtube.com/shorts/1KgEL-Upg7w"
-               />
-               <FeedCard
-                  image="/src/assets/img/thumb/emojiGatinhoComVoceThumb.webp"
-                  title="*emoji gatinho com você*"
-                  description=""
-                  link="https://youtu.be/ZN2GVnnFKTE"
-               />
-               <FeedCard
-                  image="/src/assets/img/thumb/😽beijin💜.jpg"
-                  title="😽beijin💜"
-                  description=""
-                  link="https://youtube.com/shorts/jEnu9qOJIwQ?si=Lvv7IJ3yeaTztZfY"
-               />
-               <FeedCard
-                  image="/src/assets/img/thumb/Jogo 🐼🫂🐱.jpg"
-                  title="Jogo 🐼🫂🐱"
-                  description=""
-                  link="https://www.youtube.com/watch?v=ggyaZk9PWRc"
-               />
+               Ainda adicionando os vídeos ;--;
+               {false && (
+                  <div>
+                     <FeedCard
+                        image="/src/assets/img/thumb/💋Beijinho na sua boquinha para sarar o meu amor 😚.webp"
+                        title="💋Beijinho na sua boquinha..."
+                        description=""
+                        link="https://youtube.com/shorts/1KgEL-Upg7w"
+                     />
+                     <FeedCard
+                        image="/src/assets/img/thumb/emojiGatinhoComVoceThumb.webp"
+                        title="*emoji gatinho com você*"
+                        description=""
+                        link="https://youtu.be/ZN2GVnnFKTE"
+                     />
+                     <FeedCard
+                        image="/src/assets/img/thumb/😽beijin💜.jpg"
+                        title="😽beijin💜"
+                        description=""
+                        link="https://youtube.com/shorts/jEnu9qOJIwQ?si=Lvv7IJ3yeaTztZfY"
+                     />
+                     <FeedCard
+                        image="/src/assets/img/thumb/Jogo 🐼🫂🐱.jpg"
+                        title="Jogo 🐼🫂🐱"
+                        description=""
+                        link="https://www.youtube.com/watch?v=ggyaZk9PWRc"
+                     />
+                  </div>
+               )}
             </div>
          </section>
 
