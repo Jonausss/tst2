@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const FeedCard = ({ image, title, description, link, buttonText = "Assistir" }) => {
    return (
@@ -27,8 +28,8 @@ const FeedCard = ({ image, title, description, link, buttonText = "Assistir" }) 
             <h3 className="font-bold text-lg leading-tight mt-2">{title}</h3>
             <p className="text-sm text-left my-2 grow">{description}</p>
             <div className="text-center mb-4">
-               <a
-                  href={link}
+               <Link
+                  to={link}
                   className="
               bg-lilac text-black-purple 
               border border-black-purple rounded-xl 
@@ -38,7 +39,7 @@ const FeedCard = ({ image, title, description, link, buttonText = "Assistir" }) 
             "
                >
                   {buttonText}
-               </a>
+               </Link>
             </div>
          </div>
       </article>
